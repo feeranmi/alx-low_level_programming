@@ -4,8 +4,7 @@
 
 
 /**
- * main:print whether the number stored in the
- * variable n is positive or negative.
+ * main - Determines if a number is positive, negative or zero.
  *
  * Return:Always 0
  */
