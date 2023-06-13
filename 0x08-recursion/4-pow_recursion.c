@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  * _pow_recursion - Write a function that returns the value of x raised to the power of y
+  * _pow_recursion - Function that returns the value of x^y
   * @x: We are finding the return value x
   * @y: With the power of y
   *
