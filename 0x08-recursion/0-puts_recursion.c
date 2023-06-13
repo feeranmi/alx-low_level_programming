@@ -20,7 +20,7 @@ void _puts_recursion(char *s)
 
 int main(void)
 {
-	char *notestring = "Recursion is Amazing";
+	char *notestring = "Puts with recursion";
 
 	_puts_recursion(notestring);
 	return (0);
