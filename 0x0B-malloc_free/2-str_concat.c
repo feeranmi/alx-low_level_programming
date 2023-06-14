@@ -12,17 +12,17 @@
 char *str_concat(char *s1, char *s2)
 {
 
-	unsigned int cat1;
-	unsigned int cat2;
+	unsigned int cat1 = 0;
+	unsigned int cat2 = 0;
 	char *a;
 
 	/** Check if s1 is equal to NULL */
 	if (s1 == NULL)
-		return (NULL);
+		s1 = "";
 
 	/** Check if s2 is equal to NULL */
 	if (s2 == NULL)
-		return (NULL);
+		s2 = "";
 
 	cat1 = strlen(s1);
 	cat2 = strlen(s2);
