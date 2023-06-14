@@ -21,7 +21,7 @@ char *argstostr(int ac, char **av)
 	/** calculating the length of the concatenated stings */
 	for (p = 0; p < ac; p++)
 	{
-		len += strlen(av[p] + 1);
+		len += strlen(av[p]) + 1;
 	}
 	a = malloc((len + 1) * sizeof(char));
 	if (a == NULL)
@@ -31,9 +31,9 @@ char *argstostr(int ac, char **av)
 	{
 
 	for (q = 0; av[p][q] != '\0'; q++)
-		{
-			a[r++] = av[p][q];
-		}
+	{
+		a[r++] = av[p][q];
+	}
 	a[r++] = '\n';
 	}
 	a[r] = '\0';
