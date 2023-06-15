@@ -11,10 +11,10 @@ int confirm_prime(int n, int a);
   */
 int is_prime_number(int n)
 {
-	if (n <= 0)
-        {
-                return (0);
-        }
+	if (n <= 1)
+	{
+		return (0);
+	}
 
 	return (confirm_prime(n, n - 1));
 }
