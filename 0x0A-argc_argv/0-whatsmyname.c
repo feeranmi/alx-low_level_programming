@@ -10,13 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-	char *s;
-
-	if (argc > 0)
-	{
-	s  = argv[0];
-	printf("The name of the program is: %s\n", s);
-	}
+	(void) argc;
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
