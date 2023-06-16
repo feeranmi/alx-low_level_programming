@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -9,11 +10,11 @@
   *
   * Return: If the function fails, it should return NULL
   */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int cat1 = 0;
 	unsigned int cat2 = 0;
-	unsigned int cat_lent, i, j;
+	unsigned int cat_len, i, j;
 	char *a;
 
 	/** Check if s1 is equal to NULL */
@@ -33,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 	cat_len = cat1 + n;
 
 	a = malloc((cat_len + 1) * sizeof(char));
-	if (cat == NULL)
+	if (a == NULL)
 	return (NULL);
 
 	for (i = 0; i < cat1; i++)
