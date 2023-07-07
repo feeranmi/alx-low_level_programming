@@ -5,7 +5,8 @@
  * @head: Pointer to the head of the list.
  *
  * This function deallocates the memory used by each node in a linked list.
- * It takes a pointer to the head of the list as input and does not return anything.
+ * It takes a pointer to the head of the list as input and does not return 
+ * anything.
  */
 void free_listint(listint_t *head)
 {
